@@ -1,0 +1,12 @@
+{
+  "name": "malblogmal",
+  "description": "blog",
+  "private": true,
+  "scripts": {
+    "dev:admin": "pnpm --filter admin dev",
+    "dev:blog": "pnpm --filter blog dev"
+  },
+  "dependencies": {
+    "convex": "^1.42.0"
+  }
+}
