@@ -7,8 +7,11 @@
     "dev:blog": "pnpm --filter blog dev"
   },
   "dependencies": {
-    "@auth/core": "^0.34.3",
-    "@convex-dev/auth": "^0.0.94",
+    "@convex-dev/better-auth": "^0.12.2",
+    "better-auth": "1.4.9",
     "convex": "^1.42.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.1"
   }
 }

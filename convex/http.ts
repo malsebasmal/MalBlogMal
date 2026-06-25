@@ -1,8 +1,9 @@
 import { httpRouter } from "convex/server";
-import { auth } from "./auth.config";
+import { authComponent, createAuth } from "./auth";
 
 const http = httpRouter();
 
-auth.addHttpRoutes(http);
+// Registers all Better Auth HTTP routes under /api/auth
+authComponent.registerRoutes(http, createAuth);
 
 export default http;

@@ -1,6 +1,6 @@
-import { convexAuth } from "@convex-dev/auth/server";
-import Password from "@auth/core/providers/credentials";
+import { getAuthConfigProvider } from "@convex-dev/better-auth/auth-config";
+import type { AuthConfig } from "convex/server";
 
-export const { auth, signIn, signOut, store } = convexAuth({
-  providers: [Password],
-});
+export default {
+  providers: [getAuthConfigProvider()],
+} satisfies AuthConfig;
